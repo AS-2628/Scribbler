@@ -1,0 +1,128 @@
+/* For the Subject of the post */
+#subHead{
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* For Author name and Edit/Save Button */
+#headName{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 100px;
+}
+
+/* For the Author Name */
+#nameHead{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
+
+/* For the Content */
+#contentHead{
+    text-align: justify;
+    font-family: 'Inconsolata', monospace;
+    margin: 6%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+/* For the Edit/Save Button */
+.edit{
+    height: 40px;
+    width: 80px;
+    border: 0px;
+    background-color: rgb(255, 0, 98);
+    color: white;    
+    box-shadow: 1px 5px 10px  #a7a7a7;
+}
+
+/* When we hover on Edit/Save Button */
+.edit:hover{
+    border: 2px solid rgb(184, 7, 75);
+    background-color: rgb(184, 7, 75);
+}
+
+/* For the whole Content */
+#allCont{
+    margin-top: 3%;
+}
+
+/* When Content is editable */
+.editor {
+     border: 2px solid rgb(255, 72, 160);
+}
+  
+/* When Content is Editable, to remove the outlining of the content when focused */
+[contenteditable]:focus {
+    outline: 0px;
+  } 
+
+
+
+/* For Like Feat */
+
+/* Whole Like Div*/
+#LikeDiv{
+    margin-left:6%;
+    margin-top: 4%;
+}
+
+/* Like Text */
+#likeText{
+    margin-top: 1%;
+    color: rgb(112, 112, 112);
+}
+
+/* For Comment Feat */
+
+/* Whole Comment Div */
+#commentDiv{
+    margin-left:6% ;
+    margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+/* For Comment Writing Box */
+textarea{
+    color: grey;
+    border: 1px solid gray;
+}
+
+/* Comment Writing Box on Focus */
+textarea:focus{
+    color: black;
+    outline:1px solid rgb(10, 190, 255);
+}
+
+/* For the Comment Button */
+#commentBtn{
+    margin-top: 1%;
+    width: 100px;
+}
+
+/* For the All Comments Heading */
+#comHead{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/* For the indiviual comments added */
+#CommentTexter{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 20%;
+    border-left: 17px solid rgb(191, 189, 189);
+    border-right:17px solid rgb(232, 230, 230) ;
+    border-top: 27px solid rgb(191, 189, 189);
+    border-bottom: 13px solid rgb(191, 189, 189);
+    font-size: 17px;    
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1%;
+}

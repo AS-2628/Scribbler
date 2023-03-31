@@ -1,0 +1,274 @@
+/* For background colour */
+body {
+    background-color: #ffeedd;
+}
+
+
+
+/* For the Post Cards */
+
+/* For making all the post cards in a flex */
+#mainDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+/* For indiviual post cards */
+.postCards{
+    display: flex;
+    justify-content: space-evenly;
+    height: 160px;
+    width: 600px;
+    background-color: rgb(233, 230, 230);
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px  #000000;
+}
+
+/* When we hover on any postcard */
+.postCards:hover{
+    cursor: default;
+    box-shadow: 6px 6px 35px  #000000;
+}
+
+/* For the author name in the post card */
+.nameCard{
+    background-color: white;
+    color: grey;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 9%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/* When we hover on the trash icon */
+.trashBin:hover{
+    cursor: pointer;
+}
+
+/* For the menu icon or ellipsis icon */
+.menuIcon{
+    float:right;
+    margin-top: 0px;
+    margin-right: 2%;
+}
+
+/* When we hover on menuIcon or elliosis icon */
+.menuIcon:hover{
+    cursor: pointer;
+}
+
+/* For the Subject on each card */
+.subCard{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 2%;
+    color: rgb(104, 102, 102);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* For the content on each card */
+.contentCard{
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+
+
+/* Media Queries For the Responsivness of the Cards and displaying them in described order */
+
+@media screen and (max-width: 450px)  {
+    .postCards{
+        height:auto;
+        width:120px;
+    }
+    .nameCard{
+        padding-top: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 50px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 40px;
+    }
+    .menuIcon{
+        float: left;
+    }
+  }
+  
+@media screen and (max-width: 585px) and (min-width: 450px) {
+    .postCards{
+        height:auto;
+        width:168px;
+    }
+    .nameCard{
+        padding-top: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 50px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 25px;
+    }
+    .menuIcon{
+        float: left;
+    }
+  }
+  
+  @media screen and (max-width: 708px) and (min-width: 585px) {
+    .postCards{
+        height:auto;
+        width:200px;
+    }
+    .nameCard{
+        padding-top: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 50px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 25px;
+    }
+    .menuIcon{
+        float: left;
+    }
+  }
+  @media screen and (max-width: 802px) and (min-width: 708px) {
+    .postCards{
+        height:auto;
+        width:300px;
+    }
+    .nameCard{
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) and (min-width: 802px) {
+    .postCards{
+        height:auto;
+        width:350px;
+    }
+    .nameCard{
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) and (min-width: 900px) {
+    .postCards{
+        height:auto;
+        width:350px;
+    }
+    .nameCard{
+        padding-top: 85px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .postCards{
+        height:auto;
+        width:460px;
+    }
+    .nameCard{
+        padding-top: 85px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subCard{
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .contentCard{
+        padding-left: 4%;
+        padding-right: 25px;
+    }
+  }
+  
+
+  /* For the Confirmation Modal */
+
+  /* For the whole modal position */
+  .modalClass {
+    display: none; /* Hidden by default */
+    position: fixed;  /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* For the content on the modal */
+  .contentMod {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 250px;
+    padding: 20px;
+    width: 20%;
+  }
+  
+  /* For the Yes/No button on the modal */
+  #modHeadFlex{
+    display: flex;
+    justify-content: space-around;
+  }
